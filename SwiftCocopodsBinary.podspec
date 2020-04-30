@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftCocopodsBinary'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = ' SwiftCocopodsBinary.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,15 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SwiftCocopodsBinary/Classes/**/*'
+  if ENV['IS_BINARY']
+      s.source_files = 'SwiftCocopodsBinary/Classes/**/*'
+  else
+      s.source_files = 'SwiftCocopodsBinary/Classes/**/*'
+      s.vendored_frameworks = 'SwiftCocopodsBinary/Framework/SwiftCocopodsBinaryFramework.framework'
+  end
   
+  
+  s.swift_version    = '5.0'
   # s.resource_bundles = {
   #   'SwiftCocopodsBinary' => ['SwiftCocopodsBinary/Assets/*.png']
   # }

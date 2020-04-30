@@ -1,0 +1,11 @@
+framework module SwiftCocopodsBinaryFramework {
+  umbrella header "SwiftCocopodsBinaryFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftCocopodsBinaryFramework.Swift {
+    header "SwiftCocopodsBinaryFramework-Swift.h"
+    requires objc
+}

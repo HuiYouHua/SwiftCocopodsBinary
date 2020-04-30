@@ -14,6 +14,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7A3BC3FD6190CF0953101045 /* Pods_SwiftCocopodsBinary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4426AC24B61A47D4D78A310C /* Pods_SwiftCocopodsBinary_Tests.framework */; };
+		BEA18001245ABD26005B0901 /* SwiftCocopodsBinaryFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA17FFF245ABD26005B0901 /* SwiftCocopodsBinaryFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA18004245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA17FFD245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework */; };
+		BEA18005245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEA17FFD245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEA1800A245ABD35005B0901 /* TestPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA18009245ABD35005B0901 /* TestPrint.swift */; };
 		DF8C670B80FF5C1E01F6DA61 /* Pods_SwiftCocopodsBinary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5031E184E142B3779AA504C9 /* Pods_SwiftCocopodsBinary_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +29,28 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = SwiftCocopodsBinary;
 		};
+		BEA18002245ABD26005B0901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA17FFC245ABD26005B0901;
+			remoteInfo = SwiftCocopodsBinaryFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEA17FF5245ABC5A005B0901 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BEA18005245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4102C2946923FCD10D38AEDA /* Pods-SwiftCocopodsBinary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCocopodsBinary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftCocopodsBinary_Tests/Pods-SwiftCocopodsBinary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +71,10 @@
 		931C58EE898B80265D1522A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A7D5A6D685D5AFB6FC4D3E86 /* Pods-SwiftCocopodsBinary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCocopodsBinary_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftCocopodsBinary_Example/Pods-SwiftCocopodsBinary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B2961898FAFB47A0A6A48481 /* Pods-SwiftCocopodsBinary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCocopodsBinary_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftCocopodsBinary_Tests/Pods-SwiftCocopodsBinary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BEA17FFD245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCocopodsBinaryFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA17FFF245ABD26005B0901 /* SwiftCocopodsBinaryFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCocopodsBinaryFramework.h; sourceTree = "<group>"; };
+		BEA18000245ABD26005B0901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA18009245ABD35005B0901 /* TestPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestPrint.swift; path = ../../SwiftCocopodsBinary/Classes/TestPrint.swift; sourceTree = "<group>"; };
 		D93EC0D8092C1BD9AD7FE3BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA18004245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework in Frameworks */,
 				DF8C670B80FF5C1E01F6DA61 /* Pods_SwiftCocopodsBinary_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +93,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3BC3FD6190CF0953101045 /* Pods_SwiftCocopodsBinary_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA17FFA245ABD26005B0901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +123,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SwiftCocopodsBinary */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				BEA17FFE245ABD26005B0901 /* SwiftCocopodsBinaryFramework */,
 				607FACD11AFB9204008FA782 /* Products */,
 				1665BAD4FE997BC86A5E5B69 /* Pods */,
 				F9C69BA1859AF2A4B00AA9B4 /* Frameworks */,
@@ -97,6 +135,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* SwiftCocopodsBinary_Example.app */,
 				607FACE51AFB9204008FA782 /* SwiftCocopodsBinary_Tests.xctest */,
+				BEA17FFD245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +189,16 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BEA17FFE245ABD26005B0901 /* SwiftCocopodsBinaryFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BEA18009245ABD35005B0901 /* TestPrint.swift */,
+				BEA17FFF245ABD26005B0901 /* SwiftCocopodsBinaryFramework.h */,
+				BEA18000245ABD26005B0901 /* Info.plist */,
+			);
+			path = SwiftCocopodsBinaryFramework;
+			sourceTree = "<group>";
+		};
 		F9C69BA1859AF2A4B00AA9B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +210,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BEA17FF8245ABD26005B0901 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA18001245ABD26005B0901 /* SwiftCocopodsBinaryFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		607FACCF1AFB9204008FA782 /* SwiftCocopodsBinary_Example */ = {
 			isa = PBXNativeTarget;
@@ -171,10 +231,12 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				E4163A1EE3D8E16ABA0F2E5B /* [CP] Embed Pods Frameworks */,
+				BEA17FF5245ABC5A005B0901 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BEA18003245ABD26005B0901 /* PBXTargetDependency */,
 			);
 			name = SwiftCocopodsBinary_Example;
 			productName = SwiftCocopodsBinary;
@@ -200,6 +262,24 @@
 			productReference = 607FACE51AFB9204008FA782 /* SwiftCocopodsBinary_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BEA17FFC245ABD26005B0901 /* SwiftCocopodsBinaryFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA18008245ABD26005B0901 /* Build configuration list for PBXNativeTarget "SwiftCocopodsBinaryFramework" */;
+			buildPhases = (
+				BEA17FF8245ABD26005B0901 /* Headers */,
+				BEA17FF9245ABD26005B0901 /* Sources */,
+				BEA17FFA245ABD26005B0901 /* Frameworks */,
+				BEA17FFB245ABD26005B0901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCocopodsBinaryFramework;
+			productName = SwiftCocopodsBinaryFramework;
+			productReference = BEA17FFD245ABD26005B0901 /* SwiftCocopodsBinaryFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +299,11 @@
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
+					BEA17FFC245ABD26005B0901 = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SwiftCocopodsBinary" */;
@@ -237,6 +322,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* SwiftCocopodsBinary_Example */,
 				607FACE41AFB9204008FA782 /* SwiftCocopodsBinary_Tests */,
+				BEA17FFC245ABD26005B0901 /* SwiftCocopodsBinaryFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +339,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA17FFB245ABD26005B0901 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,6 +437,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEA17FF9245ABD26005B0901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA1800A245ABD35005B0901 /* TestPrint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -351,6 +452,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* SwiftCocopodsBinary_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		BEA18003245ABD26005B0901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA17FFC245ABD26005B0901 /* SwiftCocopodsBinaryFramework */;
+			targetProxy = BEA18002245ABD26005B0901 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 537076BD5E024A3691C06DC3 /* Pods-SwiftCocopodsBinary_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftCocopodsBinary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -493,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7D5A6D685D5AFB6FC4D3E86 /* Pods-SwiftCocopodsBinary_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftCocopodsBinary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -545,6 +653,80 @@
 			};
 			name = Release;
 		};
+		BEA18006245ABD26005B0901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftCocopodsBinaryFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.SwiftCocopodsBinaryFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEA18007245ABD26005B0901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SwiftCocopodsBinaryFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.development.SwiftCocopodsBinaryFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +753,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA18008245ABD26005B0901 /* Build configuration list for PBXNativeTarget "SwiftCocopodsBinaryFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA18006245ABD26005B0901 /* Debug */,
+				BEA18007245ABD26005B0901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
