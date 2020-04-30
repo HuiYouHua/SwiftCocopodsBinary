@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   if ENV['IS_BINARY']
       s.source_files = 'SwiftCocopodsBinary/Classes/**/*'
   else
-      s.source_files = 'SwiftCocopodsBinary/Classes/**/*'
+#      s.source_files = 'SwiftCocopodsBinary/Classes/**/*'
       s.vendored_frameworks = 'SwiftCocopodsBinary/Framework/SwiftCocopodsBinaryFramework.framework'
   end
   

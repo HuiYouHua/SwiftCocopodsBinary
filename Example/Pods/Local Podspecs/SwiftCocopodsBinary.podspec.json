@@ -1,6 +1,6 @@
 {
   "name": "SwiftCocopodsBinary",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "SwiftCocopodsBinary.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/HuiYouHua/SwiftCocopodsBinary",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/HuiYouHua/SwiftCocopodsBinary.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"

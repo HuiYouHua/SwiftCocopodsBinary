@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftCocopodsBinary
+import SwiftCocopodsBinaryFramework
 
 class ViewController: UIViewController {
 

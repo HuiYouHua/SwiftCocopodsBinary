@@ -1,5 +1,5 @@
 PODS:
-  - SwiftCocopodsBinary (0.1.0)
+  - SwiftCocopodsBinary (0.2.0)
 
 DEPENDENCIES:
   - SwiftCocopodsBinary (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftCocopodsBinary: 09ba0e6fb890ad21bca400e4b9da0e6a2b570420
+  SwiftCocopodsBinary: 81cffef8e539b09851ca63955b7b778ed596c71a
 
 PODFILE CHECKSUM: 6acf8d870876dd2801998bf9d3c88514c3560e83
 
