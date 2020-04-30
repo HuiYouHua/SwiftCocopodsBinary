@@ -1,0 +1,6 @@
+framework module SwiftCocopodsBinary {
+  umbrella header "SwiftCocopodsBinary-umbrella.h"
+
+  export *
+  module * { export * }
+}

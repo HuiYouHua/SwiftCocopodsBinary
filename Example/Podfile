@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftCocopodsBinary_Example' do
+  pod 'SwiftCocopodsBinary', :path => '../'
+
+  target 'SwiftCocopodsBinary_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
